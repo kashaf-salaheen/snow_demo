@@ -30,7 +30,7 @@ locals {
 # Create AWS Compute Instance 
 resource "aws_instance" "ec2_test" {
   ami           = data.aws_ami.amzn-linux-2023-ami.id
-  instance_type = "t2.micro"
+  instance_type = "t2.nano"
   //instance_type = "t2.nano"
 
   tags = {
